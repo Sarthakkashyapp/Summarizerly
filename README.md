@@ -1,7 +1,7 @@
 # 📄 Summarizerly
 
 AI-powered PDF summarization platform that generates clear, structured insights from your documents.  
-Built with **Next.js 15**, **LangChain**, **Clerk**, and **GPT-4**, Summarizerly provides secure file handling, interactive summaries, and a production-ready experience.
+Built with **Next.js 15**, **LangChain**, **Clerk**, and **Gemini-2.5-flash-lite**, Summarizerly provides secure file handling, interactive summaries, and a production-ready experience.
 
 ---
 
