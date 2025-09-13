@@ -5,6 +5,7 @@ import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner";
+import { ORIGIN_URL } from "@/utils/helpers";
 
 const fontSans = FontSans({
   variable: "--font-geist-sans",
@@ -20,7 +21,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Summarizerly : AI Powered PDF's Summarization",
-  description: "Summarizerly is and app for summarizing PDF Documents",
+  description: "Save hours of reading time. Transform lengthy PDF;s into clear, accurate summaries in seconds.",
+  icons: {
+    icon: '/icon.png'
+  },
+  metadataBase: new URL(ORIGIN_URL),
+  alternates: {
+    canonical: ORIGIN_URL,
+  }
 };
 
 export default function RootLayout({
