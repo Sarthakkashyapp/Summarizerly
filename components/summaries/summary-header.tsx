@@ -33,7 +33,7 @@ export default function SummaryHeader({title, createdAt, readingTime} : {title:s
                     </div>
                 </div>
                 <h1 className="text-2xl lg:text-4xl font-bold lg:tracking-tight">
-                    <span className="bg-linear-to-r from-blue-800 via-blue-600 to-blue-400 bg-clip-text text-transparent">{title}</span>
+                    <span className="bg-linear-to-r from-blue-800 bg-clip-text text-transparent">{title}</span>
                 </h1>
             </div>
             <div className="self-start">
