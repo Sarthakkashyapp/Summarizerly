@@ -251,6 +251,10 @@
     @apply bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white border-none shadow-lg rounded-lg px-6 py-3 hover:cursor-pointer;
   }
 
+  .btn-secondary {
+    @apply bg-gradient-to-r from-blue-200 via-blue-400 to-blue-600;
+  }
+
   @keyframes gradient-x {
     0%,
     100% {
@@ -277,4 +281,37 @@
   @media (width >= 1400px) {
     max-width: 1400px;
   }
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-size: 200% 100%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 100%;
+    background-position: right center;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 2s ease-in-out infinite;
 }
